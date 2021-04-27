@@ -101,7 +101,6 @@ async def game(ctx):
                     
                     if int(msg2.content) == choice:
                         await ctx.send(f"Out!!!!!")
-                        await asyncio.sleep(0.5)
                         await ctx.send(f"{ctx.author}, I will bat now. Send your msg for first ball")
                         
                         while True:
@@ -174,7 +173,6 @@ async def game(ctx):
                                         
                                         else:
                                             await ctx.send(f"{ctx.author}, You chose {msg3.content}. I chose {choice1}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                                            await asyncio.sleep(0.5)
                             
                                 elif msg3.author != ctx.author:
                                     continue
@@ -192,7 +190,6 @@ async def game(ctx):
                     else:
                         score_h += int(msg2.content)
                         await ctx.send(f"{ctx.author}, You chose {msg2.content}. I chose {choice}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                        await asyncio.sleep(0.5)
                 
                 elif msg2.author != ctx.author:
                     continue
@@ -227,7 +224,6 @@ async def game(ctx):
                     
                     if int(msg2.content) == choice:
                         await ctx.send(f"Out!!!!!")
-                        await asyncio.sleep(0.5)
                         await ctx.send(f"{ctx.author}, I will bowl now. Send your msg for first ball")
                         
                         while True:
@@ -293,7 +289,6 @@ async def game(ctx):
                                                                             
                                         else:
                                             await ctx.send(f"{ctx.author}, You chose {msg3.content}. I chose {choice1}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                                            await asyncio.sleep(0.5)
                                     
                                     elif score_b < score_h:
                                         await ctx.send(f"{ctx.author}, You chose {msg3.content}. I chose {choice1}.")
@@ -317,7 +312,6 @@ async def game(ctx):
                     else:
                         score_b += choice
                         await ctx.send(f"{ctx.author}, You chose {msg2.content}. I chose {choice}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                        await asyncio.sleep(0.5)
                 
                 elif msg2.author != ctx.author:
                     continue
@@ -359,7 +353,6 @@ async def game(ctx):
                         
                         if int(msg2.content) == choice:
                             await ctx.send("Out!!!!!")
-                            await asyncio.sleep(0.5)
                             await ctx.send(f"{ctx.author}, I will bat now. Send your msg for first ball")
                             
                             while True:
@@ -432,7 +425,6 @@ async def game(ctx):
                                             
                                             else:
                                                 await ctx.send(f"{ctx.author}, You chose {msg3.content}. I chose {choice1}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                                                await asyncio.sleep(0.5)
                                     
                                     elif msg3.author != ctx.author:
                                         continue
@@ -450,7 +442,6 @@ async def game(ctx):
                         else:
                             score_h += int(msg2.content)
                             await ctx.send(f"{ctx.author}, You chose {msg2.content}. I chose {choice}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                            await asyncio.sleep(0.5)
                     
                     elif msg2.author != ctx.author:
                         continue
@@ -485,7 +476,6 @@ async def game(ctx):
                         
                         if int(msg2.content) == choice:
                             await ctx.send(f"Out!!!!!")
-                            await asyncio.sleep(0.5)
                             await ctx.send(f"{ctx.author}, I will bowl now. Send your msg for first ball")
                             
                             while True:
@@ -558,7 +548,6 @@ async def game(ctx):
                                                 
                                             else:
                                                 await ctx.send(f"{ctx.author}, You chose {msg3.content}. I chose {choice1}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                                                await asyncio.sleep(0.5)
                                     
                                     elif msg3.author != ctx.author:
                                         continue
@@ -576,7 +565,6 @@ async def game(ctx):
                         else:
                             score_b += choice
                             await ctx.send(f"{ctx.author}, You chose {msg2.content}. I chose {choice}. \nScore: \nHuman: {score_h} \nBot : {score_b}")
-                            await asyncio.sleep(0.5)
                 
                     elif msg2.author != ctx.author:
                         continue
